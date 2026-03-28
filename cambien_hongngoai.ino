@@ -471,8 +471,7 @@ void callback(char *topic, byte *payload, unsigned int length)
             }
         }
 
-        // --- 2. XỬ LÝ RPC HOẶC CLIENT ATTRIBUTES (Điều khiển trực tiếp) ---
-        // Kiểm tra trực tiếp các key điều khiển (LED, Relay)
+
         
         // Điều khiển đèn LED chính (Dùng key 'led_state' hoặc 'lightState')
         if (doc.containsKey("led_state")) {
